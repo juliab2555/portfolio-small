@@ -1,0 +1,352 @@
+/*================== ADOBE FONTS =====================*/
+@import url("https://use.typekit.net/lka1vse.css");
+
+/*================== VARIABLES CSS ===================*/
+:root {
+
+    /* Colours */
+    --bg-colour: #000000;
+    --top-colour: #ffffff;
+
+
+    /* Font and typography */
+    --subtitle-font: "acme-gothic-condensed", sans-serif;
+    --project-bio-font: "acme-gothic", sans-serif;
+    --body-font: "neue-haas-grotesk-display", sans-serif;
+    --body-font-weight: lighter;
+    --body-font-style: normal;
+    --bold-font-weight: 600;
+    --subtitle-font-weight: 300;
+
+    /* Font size */
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.70rem;
+    --p-font-size: 1rem;
+    --caption-font-size: 0.75rem;
+}
+
+@media screen and (max-width: 767){
+    h3{
+        font-family: var(--body-font);
+        font-size: 1rem;
+        color: var(--top-colour);
+        font-weight: var(--body-font-weight);
+        font-style: var(--body-font-style);
+    }
+    .nav{
+        border-right-style: none;
+        position: sticky;
+    }
+}
+
+@media screen and (max-width: 575){
+    h3{
+        font-size: 0.75rem;;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #000;
+    font-size: 1rem;
+}
+
+
+
+nav{
+    background-color: #000;
+    position:fixed;
+}
+
+h1{
+    font-family: var(--body-font);
+    font-size: var(--h1-font-size);
+    color: var(--top-colour);
+}
+
+h2{
+    font-family: var(--body-font);
+    font-size: var(--h2-font-size);
+    color: var(--top-colour);
+}
+
+h3{
+    font-family: var(--body-font);
+    font-size: var(--h3-font-size);
+    color: var(--top-colour);
+    font-weight: var(--body-font-weight);
+    font-style: var(--body-font-style);
+}
+
+p {
+    font-family: var(--body-font);
+    font-size: var(--p-font-size);
+    line-height: 1.5rem;
+    color: var(--top-colour);
+    font-weight: var(--body-font-weight);
+    font-style: var(--body-font-style);
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smooth: auto;
+    word-spacing: 5%;
+}
+
+b{
+    font-weight: var(--bold-font-weight);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.caption{
+    font-size: var(--caption-font-size);
+    word-spacing: 75%;
+}
+
+.nav{
+    
+    margin: 0;
+    background-color: #000;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-width: 0.5px;
+    border-color: #ffffff;
+}
+
+
+
+
+
+body{
+    min-height: 100vh;
+    background-color: #000;
+}
+
+main{
+    margin-left: 7%;
+}
+
+.button {
+    border: 1px solid var(--top-colour);
+    color: var(--top-colour);
+    background-color: var(--bg-colour);
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 39px;
+    font-size: var(--p-font-size);
+    font-family: var(--body-font);
+    text-align: center;
+    text-decoration: none;  
+    position: absolute;
+    bottom: 5%; 
+    max-width: 75%;
+    float: none;
+    display: block;
+    margin: 0vh 1vw 0vh 0.5vw;
+    font-size: 1.1vw;
+}
+
+.button:hover {
+    border: 1px solid var(--top-colour);
+    background-color: var(--top-colour);
+    color: var(--bg-colour);
+    text-align: center;
+    text-decoration: none;
+}
+
+.logo{
+    margin: 4vh 5vw -5vh -0.5vw;
+}
+
+.icon{
+    scale: 150%;
+    left: 2%;
+    bottom: 13%;
+    fill: #ffffff;
+}
+
+.icon:hover{
+    fill:#9b9b9b;
+}
+
+.about{
+    margin: 17.5rem 9rem 16rem 13rem;
+    padding: 2rem;
+    font-weight: var(--body-font-weight);
+}
+
+.project_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat (3, 1fr);
+    margin: 0rem 7rem 0rem 9rem;
+    padding: 2rem;
+    text-align: center;
+    width: 83%;
+}
+
+.grid_project{
+    padding: 2rem;
+    width: 100%;
+    align-items: center;
+}
+
+.project-bio{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    margin-top: 1rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+         column-count: 2;
+}
+
+.project-bio-long{
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    margin-top: 1rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+         column-count: 2;
+}
+
+.project-name{
+    grid-column: 1;
+    border-right-style: solid;
+    border-width: 0.5px;
+    margin-left: 3rem;
+    padding: 1rem;
+    color: #ffffff;
+}
+
+.project-keywords{
+    grid-column: 2;
+    padding-left: 2rem;
+    padding-top: 1.05rem;
+}
+
+.project-caption{
+    text-align: center;
+    font-size: var(--h2-font-size);
+    margin-left: 7rem;
+    margin-right: 7rem;
+    padding: 5rem;
+    color: #ffffff;
+}
+
+.project-description{
+    margin-left: 20vw;
+    margin-right: 20vw;
+    align-items: center;
+}
+
+.section{
+    font-family: var(--body-font);
+    font-size: var(--h2-font-size);
+    color: var(--top-colour);
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding-top: 5rem;
+}
+
+.project-media{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.banner{
+    padding-left: 2.5vw;
+}
+
+.prototype-mobile{
+    width: 70%;
+}
+
+.explore-more{
+    align-items: center;
+    text-align: center;
+    padding-top: 40vh;
+}
+
+.explore-image{
+    scale: 35%;
+}
+
+.column {
+    width: 48%;
+    padding: 1.5%;
+}
+
+.project-nav{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    margin-top: 1rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+         column-count: 2;
+}
+
+
+.previous-page{
+    grid-column: 1;
+    font-size: var(--h3-font-size);
+    font-family: var(--body-font);
+    text-decoration: none;
+}
+
+.next-page{
+    grid-column: 2;
+    text-align: right;
+    font-size: var(--h3-font-size);
+    font-family: var(--body-font);
+    text-decoration: none;
+}
+
+
+.project-nav .next-page a h3 span {
+    display: inline-block;
+    transition: 1s;
+    transform: translateX(20%);
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-nav .next-page:hover > a h3 span{
+    transform: translateX(50%);
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-nav .previous-page a h3 span {
+    display: inline-block;
+    transition: 1s;
+    transform: translateX(-20%);
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-nav .previous-page:hover > a h3 span{
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: inherit;
+}
+
+footer{
+    font-family: var(--body-font);
+    text-decoration: none;
+}
+
+
